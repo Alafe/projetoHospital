@@ -1,6 +1,6 @@
 package projetohospital;
 
-public class Pessoa {
+public abstract class Pessoa {
     //atributos da classe
     private String nome;
     private String sobrenome;
