@@ -39,6 +39,11 @@ public class ProjetoHospital {
         System.out.println("RG: " + p.getRg());
         System.out.println("Codigo do paciente: " + p.getSenhaPaciente());
         System.out.println("Senha do paciente: " + p.getSenhaPaciente());
+        if(p.logar(p.getSenhaPaciente()) == true){
+            System.out.println("Bem-Vindo");
+        }else{
+            System.out.println("senha invalida");
+        }
         
         System.out.println("--------------------------------");
         System.out.println("##### ENFERMEIRO #####");
@@ -49,6 +54,11 @@ public class ProjetoHospital {
         System.out.println("Corem: " + e.getCorem());
         System.out.println("Salario: " + e.getSalario());
         System.out.println("Senha do enfermeiro: " + e.getSenhaEnfermeiro());
+        if(e.logar(e.getSenhaEnfermeiro()) == true){
+            System.out.println("Bem-Vindo");
+        }else{
+            System.out.println("senha invalida");
+        }
         
         System.out.println("--------------------------------");
         System.out.println("##### MÉDICO #####");
@@ -58,7 +68,11 @@ public class ProjetoHospital {
         System.out.println("RG: " + m.getRg());
         System.out.println("CRM:" + m.getCrm());
         System.out.println("Especialidade: " + m.getEspacialidade());
-        
+        if(m.logar(m.getSenhaMedico()) == true){
+            System.out.println("Bem-Vindo");
+        }else{
+            System.out.println("senha invalida");
+        }
     }
     
 }
