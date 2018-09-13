@@ -20,7 +20,7 @@ public class Paciente extends Pessoa{
         return this.codPaciente;
     }
     
-    public void setCodFuncionario(Integer codPaciente){
+    public void setCodPaciente(Integer codPaciente){
         if(codPaciente != null){
             this.codPaciente = codPaciente;
         }
